@@ -1083,7 +1083,7 @@ async def txt_handler(bot: Client, m: Message):
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             elif "classplusapp" in url:
-                signed_api = f"https://cpapi-rjbs.onrender.com/extract_keys?url={url}@bots_updatee"
+                signed_api = f"https://cpapi-rjbs.onrender.com/extract_keys?url=https://media-cdn.classplusapp.com/763320/cc/97d7678f3a7942828a88d4cb6651fdd2-8g/master.m3u8@bots_updatee"
                 response = requests.get(signed_api, timeout=10)
                 #url = response.text.strip()
                 url = response.json()['url']  
